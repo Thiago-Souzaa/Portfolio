@@ -85,10 +85,11 @@ padding: 8% 15%;
     align-items: center;
 
     justify-content: space-between;
+    gap:82px;
  
 }
 .apresentacao-conteudo{
-    width: 615px;
+    width: 50%;
 }
  
 .apresentacao-conteudo-titulo{
@@ -133,7 +134,7 @@ padding: 8% 15%;
     justify-content:center;
     /* para dar espacamento entre eles */
     gap:16px ;
-    width: 378px;
+    width: 50%;
     /* para alinhar o texto */
     text-align:center;
     font-weight: 600;
@@ -152,6 +153,18 @@ padding: 8% 15%;
 .apresentacao-links-link:hover{
     background-color: #272727;
 }
+
+.apresentacao-imagem{
+    width: 50%;
+}
+
+
+
+
+
+
+
+
 .rodape{
     display: flex;
     color:#000;
@@ -163,3 +176,37 @@ padding: 8% 15%;
     font-weight: 400;
 }
 
+/* o media queries  serve para estilizar a aplicacao assim que a tela chegar em uma determinada medida*/
+
+@media(max-width:1200px){
+.apresentacao{
+
+    /* estamos usando o flex box para deixar as tags filhos em coluna...o reverse, inverte as ordem que as tags filho se encontra  */
+    flex-direction: column-reverse;
+    padding: 5%;
+
+
+}
+
+
+
+
+
+.apresentacao-conteudo{
+    width: auto;
+}
+.cabecalho{
+    padding: 7%;
+    display: flex;
+    justify-content:center;
+
+}
+
+
+
+
+
+
+
+
+}
