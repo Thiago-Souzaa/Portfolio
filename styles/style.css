@@ -1,0 +1,165 @@
+/* root é para criar varieveis globais  */
+:root{
+    --cor-primaria:  #000;
+    --cor-segundaria:#F6F6F6;
+    --cor-terciaria:#22D4FD ;
+}
+
+
+
+
+
+body{
+
+
+    /* height: 100vh;; */
+    /* o box-sizing serve para manter o elemento filho dentro do elemento pai !!1 */
+    box-sizing: border-box;
+    /* cor de fundo */
+    background-color: var(--cor-primaria);
+    /* cor do testo */
+    
+    color: var(--cor-segundaria);
+
+
+
+
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100&display=swap');
+
+/* Height é o tamanho da tela */
+.cabecalho{
+    padding: 2%  0%  0%   15%;
+    
+}
+.cabecalho-menu{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    color:#22D4FD ;
+    font-size:15px;
+    font-weight: 600;
+    gap: 80px;
+    /* para nao ficar sumblinhado o texto */
+    text-decoration: none;
+}
+
+ .cabecalho-menu-home{
+    text-decoration: none;
+    color:#22D4FD ;
+ }
+.cabecalho-menu-sobreMim{
+    text-decoration: none;
+    color:#22D4FD ;
+
+}
+
+.titulo-destaque-um{
+    color:#22D4FD ;
+}
+
+
+
+/* editando o Box Model , todo elemento tem !!  */
+
+/* tirando a maguem dos elementos */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* vamos usar o flexbox que serve para pocisionar os elementos filhos dentro dos elementos pai */
+.apresentacao{
+
+padding: 8% 15%;
+
+    /* serve para pegar todos os elementos filhos e deixar tudo na mesma linha  */
+    display:flex;
+
+    /* para centralizar os elementos filhos  */
+
+    align-items: center;
+
+    justify-content: space-between;
+ 
+}
+.apresentacao-conteudo{
+    width: 615px;
+}
+ 
+.apresentacao-conteudo-titulo{
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+}
+.apresentacao-conteudo-texto{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+.apresentacao-link{
+    display:flex;
+
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+
+
+}
+.apresentacao-link-subtitulo{
+    font-family: 'Krona One', sans-serif;
+
+
+    /* o peso da fonte  */
+    color: #F6F6F6;
+    text-align: center;
+    /* H3 */
+    font-family: Krona One;
+    font-size: 24px;
+
+    font-weight: 400;
+    line-height: 120px; /* 166.667% */
+  
+
+}
+.apresentacao-links-link{
+    /* background-color: #22D4FD; */
+    border-radius: 0.5rem;
+    border: 2px solid #22D4FD;
+    display: flex;
+    justify-content:center;
+    /* para dar espacamento entre eles */
+    gap:16px ;
+    width: 378px;
+    /* para alinhar o texto */
+    text-align:center;
+    font-weight: 600;
+    font-size: 1.5rem;
+
+    /* raio de redondamento da bordar */
+    border-radius:  16px; ;
+/* paddingné responsavel por dar distancia entre o elemento e sua borda  */
+    padding: 21.5px 0px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* usamos o hover para quando o mouse estiver em cima do elemento estilizar algo   */
+.apresentacao-links-link:hover{
+    background-color: #272727;
+}
+.rodape{
+    display: flex;
+    color:#000;
+    background-color: #22D4FD;
+    padding: 26px;
+    font-family: 'Montserrat', sans-serif;
+    justify-content:center;
+    font-size: 24px;
+    font-weight: 400;
+}
+

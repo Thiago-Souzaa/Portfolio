@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- tag link usada para linkar o arquivo css no html -->
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+    <!-- Cabeçario da pagina -->
+    <header class="cabecalho">
+        <!-- tag semantica que serve para inserir os links que vamos navegar na pagina  -->
+        <nav class="cabecalho-menu">
+            <!-- usamos href para ser redirecionado para algum canto...nesse caso é para redirecionar entre as pastas  -->
+            <a class="cabecalho-menu-home" href="index.html">Home</a>
+            <a class="cabecalho-menu-sobreMim" href="about.html">Sobre Mim </a>
+        </nav>
+    </header>
+    <!-- conteudo principal -->
+    <main class="apresentacao">                                         <!--Strong é usado para manter uma parte do texto destacada-->
+        <!-- para criar uma classe no CSS basta colocar class="" dentro da tag (isso serve para estilizar parte especifica ) -->
+
+
+
+        <!-- para estilizar irei usar a tag section para que nesse elemento pai que é o main, tenha apenas dois elementos filhos(duas tags apenas) -->
+        <section class="apresentacao-conteudo">
+        <h1 class="apresentacao-conteudo-titulo">Eleve seu negócio digital a outro nível<strong class="titulo-destaque-um"> com um Front-end de qualidade!</strong></h1> 
+        <p class="apresentacao-conteudo-texto">Olá! Sou Joana Santos, desenvolvedora Front-end com especialidade em React, HTML e CSS. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
+        <!-- div é usado quando queremos estilizar uma parte especifica   -->
+            <div class="apresentacao-link">
+                <h2 class="apresentacao-link-subtitulo">Acesse minhas redes:</h2>
+                <a class="apresentacao-links-link" href="https://www.instagram.com/thii.ink">
+                    <img src="imagens/Logo Github (1).png" alt="logo do github" class="logo-git">
+                    Git hub
+                </a>
+
+                <a class="apresentacao-links-link" href="https://www.linkedin/in/Thiagohenriquedesouza">
+                    <img src="imagens/Logo linkedin.png" alt="logo do linkedin" class="logo-linkedin">
+                    linkedin
+                </a>
+
+                <a class="apresentacao-links-link" href="https://www.twitch.tv/thii_ink">
+                    <img src="imagens/Logo Twitch.png" alt="logo do Twitch" class="logo-Twitch">
+                    Twitch
+                </a>
+            </div>
+
+
+        </section>
+    
+
+        <img src="imagens/Imagem.png" alt="foto thiago sentado">
+
+    </main>
+    <!-- rodapé da pagina --> 
+    <footer class="rodape">
+        <p>Desenvolvido por Thiago de Souza</p>
+    </footer>
+
+
+</body>
+</html> 
