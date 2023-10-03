@@ -1,4 +1,4 @@
-/* root é para criar varieveis globais  */
+
 :root{
     --cor-primaria:  #000;
     --cor-segundaria:#F6F6F6;
@@ -12,25 +12,16 @@
 body{
 
 
-    /* height: 100vh;; */
-    /* o box-sizing serve para manter o elemento filho dentro do elemento pai !!1 */
     box-sizing: border-box;
-    /* cor de fundo */
     background-color: var(--cor-primaria);
-    /* cor do testo */
     
     color: var(--cor-segundaria);
-
-
-
-
 
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100&display=swap');
 
-/* Height é o tamanho da tela */
 .cabecalho{
     padding: 2%  0%  0%   15%;
     
@@ -42,7 +33,6 @@ body{
     font-size:15px;
     font-weight: 600;
     gap: 80px;
-    /* para nao ficar sumblinhado o texto */
     text-decoration: none;
 }
 
@@ -62,9 +52,6 @@ body{
 
 
 
-/* editando o Box Model , todo elemento tem !!  */
-
-/* tirando a maguem dos elementos */
 
 *{
     margin: 0;
@@ -72,15 +59,12 @@ body{
 }
 
 
-/* vamos usar o flexbox que serve para pocisionar os elementos filhos dentro dos elementos pai */
 .apresentacao{
 
 padding: 8% 15%;
 
-    /* serve para pegar todos os elementos filhos e deixar tudo na mesma linha  */
     display:flex;
 
-    /* para centralizar os elementos filhos  */
 
     align-items: center;
 
@@ -114,42 +98,34 @@ padding: 8% 15%;
     font-family: 'Krona One', sans-serif;
 
 
-    /* o peso da fonte  */
     color: #F6F6F6;
     text-align: center;
-    /* H3 */
     font-family: Krona One;
     font-size: 24px;
 
     font-weight: 400;
-    line-height: 120px; /* 166.667% */
+    line-height: 120px;
   
 
 }
 .apresentacao-links-link{
-    /* background-color: #22D4FD; */
     border-radius: 0.5rem;
     border: 2px solid #22D4FD;
     display: flex;
     justify-content:center;
-    /* para dar espacamento entre eles */
     gap:16px ;
     width: 50%;
-    /* para alinhar o texto */
     text-align:center;
     font-weight: 600;
     font-size: 1.5rem;
 
-    /* raio de redondamento da bordar */
     border-radius:  16px; ;
-/* paddingné responsavel por dar distancia entre o elemento e sua borda  */
     padding: 21.5px 0px;
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-family: 'Montserrat', sans-serif;
 }
 
-/* usamos o hover para quando o mouse estiver em cima do elemento estilizar algo   */
 .apresentacao-links-link:hover{
     background-color: #272727;
 }
@@ -176,12 +152,10 @@ padding: 8% 15%;
     font-weight: 400;
 }
 
-/* o media queries  serve para estilizar a aplicacao assim que a tela chegar em uma determinada medida*/
 
 @media(max-width:1200px){
 .apresentacao{
 
-    /* estamos usando o flex box para deixar as tags filhos em coluna...o reverse, inverte as ordem que as tags filho se encontra  */
     flex-direction: column-reverse;
     padding: 5%;
 
@@ -201,12 +175,5 @@ padding: 8% 15%;
     justify-content:center;
 
 }
-
-
-
-
-
-
-
 
 }
